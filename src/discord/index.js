@@ -1,5 +1,5 @@
-const discord = require('discord.js');
-const client = new discord.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 const { key, secret, prefix } = require('../config/discord_api.json');
 
 
@@ -25,7 +25,11 @@ client.on('guildMemberRemove', async member => {
 });
 
 client.on('message', async message => {
+  if (!message.content.startsWith(prefix) || message.author.bot) return;
+  const args = message.content.slice(prefix.length).split(/ +/);
+  const command = args.shift().toLowerCase();
 
+  
 });
 
 client.login(secret);
