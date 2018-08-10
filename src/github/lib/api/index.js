@@ -1,5 +1,5 @@
-let Github = require('github-api')
-let logger = require('winston')
+const Github = require('github-api')
+const logger = require('winston')
 
 module.exports = class GithubApi {
   let session = {}
