@@ -1,12 +1,8 @@
 {
-  "name": "workflow",
+  "name": "github-workflow",
   "version": "1.0.0",
-  "description": "github and discord workflow for all projects",
+  "description": "github wing for workflow",
   "main": "index.js",
-  "dependencies": {
-    "jest": "^23.4.2"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "jest --forceExit"
   },
@@ -15,16 +11,20 @@
     "url": "git+https://github.com/Peer7/workflow.git"
   },
   "keywords": [
-    "discord",
     "github",
-    "productivity",
-    "easy",
-    "workflow"
+    "workflow",
+    "api",
+    "javascript",
+    "nodejs"
   ],
-  "author": "PP and JG",
+  "author": "JG and PP",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Peer7/workflow/issues"
   },
-  "homepage": "https://github.com/Peer7/workflow#readme"
+  "homepage": "https://github.com/Peer7/workflow#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "github-api": "^3.0.0"
+  }
 }
