@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const { key, secret, prefix } = require('../config/discord_api.json');
-
+const logger = require('winston')
 
 client.on('ready', () => {
   console.log('operating');

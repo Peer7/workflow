@@ -24,8 +24,7 @@
   },
   "homepage": "https://github.com/Peer7/workflow#readme",
   "dependencies": {
-    "express": "^4.16.3",
     "github-api": "^3.0.0",
-    "winston": "^3.0.0"
+    "winston": "../logger"
   }
 }
